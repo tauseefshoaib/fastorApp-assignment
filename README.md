@@ -1,5 +1,5 @@
 
-# Fastor App made using React Native, Redux Toolkit, TypeScript, Styled-Components and Axios for network calls.
+# Fastor App made using React Native, Redux Toolkit, TypeScript, Styled-Components, and, Axios for network calls.
 
 
 Here are some screenshots of the application :
@@ -7,7 +7,11 @@ Here are some screenshots of the application :
 Register Screen :
 
 
-<img src="[https://github.com/favicon.ico](https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/a0d4e1a2-99c7-4db3-a03e-0cc3dd0bd924)](https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/a0d4e1a2-99c7-4db3-a03e-0cc3dd0bd924)" width="48">
+
+<img src="https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/a0d4e1a2-99c7-4db3-a03e-0cc3dd0bd924" width="50" height="250">
+
+
+
 
 
 
