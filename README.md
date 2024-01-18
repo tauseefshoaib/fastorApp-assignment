@@ -1,79 +1,36 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# Fastor App made using React Native, Redux Toolkit, TypeScript, Styled-Components and Axios for network calls.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+Here are some screenshots of the application :
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+Register Screen :
 
-To start Metro, run the following command from the _root_ of your React Native project:
+![Simulator Screenshot - iPhone 12 - 2024-01-18 at 22 58 28](https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/a0d4e1a2-99c7-4db3-a03e-0cc3dd0bd924)
 
-```bash
-# using npm
-npm start
 
-# OR using Yarn
-yarn start
-```
 
-## Step 2: Start your Application
+![Simulator Screenshot - iPhone 12 - 2024-01-18 at 22 58 35](https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/2495f287-ea9a-44b7-b5d5-aedb938dfaea)
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
 
-```bash
-# using npm
-npm run android
+OTP Screen :
 
-# OR using Yarn
-yarn android
-```
+![Simulator Screenshot - iPhone 12 - 2024-01-18 at 22 58 39](https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/2cbb41cb-a1db-4e2d-b0cb-20202cb6460c)
 
-### For iOS
 
-```bash
-# using npm
-npm run ios
 
-# OR using Yarn
-yarn ios
-```
+![Simulator Screenshot - iPhone 12 - 2024-01-18 at 22 58 43](https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/e9ad1d0f-bb16-4b76-81dc-786e78e3fc43)
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+Restaurant List Screen :
 
-Now that you have successfully run the app, let's modify it.
+![Simulator Screenshot - iPhone 12 - 2024-01-18 at 22 58 50](https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/5a9e182f-198a-4c73-8b9a-97172a03a292)
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
-## Congratulations! :tada:
+Restaurant Details Screen :
 
-You've successfully run and modified your React Native App. :partying_face:
 
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+![Simulator Screenshot - iPhone 12 - 2024-01-18 at 22 58 55](https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/1275d07a-accc-476a-bfff-fd9d1ba2755a)
