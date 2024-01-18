@@ -8,7 +8,7 @@ Register Screen :
 
 
 
-<img src="https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/a0d4e1a2-99c7-4db3-a03e-0cc3dd0bd924" width="250px" height="600px">
+<img src="https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/a0d4e1a2-99c7-4db3-a03e-0cc3dd0bd924" width="300px" height="600px">
 
 
 
