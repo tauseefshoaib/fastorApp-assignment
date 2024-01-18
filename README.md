@@ -6,7 +6,7 @@ Here are some screenshots of the application :
 
 Register Screen :
 
-![Simulator Screenshot - iPhone 12 - 2024-01-18 at 22 58 28](https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/a0d4e1a2-99c7-4db3-a03e-0cc3dd0bd924 40*200)
+![Simulator Screenshot - iPhone 12 - 2024-01-18 at 22 58 28](https://github.com/tauseefshoaib/fastorApp-assignment/assets/78302420/a0d4e1a2-99c7-4db3-a03e-0cc3dd0bd924 width="48")
 
 
 
