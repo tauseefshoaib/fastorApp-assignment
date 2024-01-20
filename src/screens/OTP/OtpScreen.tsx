@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styled, {css} from 'styled-components/native';
 import {ParamListBase, useNavigation} from '@react-navigation/native';
 import CustomButton from '../../components/CustomButton';
@@ -12,6 +12,7 @@ import {RootState} from '../../store/store';
 import {actions as loginActions} from '../Login/loginSlice';
 import {RegisterDetailsType} from '../Login/loginTypes';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {Pressable, Text, TouchableOpacity} from 'react-native';
 
 interface TextProps {
   styles?: string;
@@ -60,13 +61,11 @@ const resendStyle = css`
   margin: 0px 5px;
   font-size: 15px;
 `;
-const blueText = css`
-  color: #5574c6;
-  font-size: 15px;
-`;
 
 const OtpScreen: React.FC = () => {
   const [otp, setOtp] = useState<number>();
+  const [timer, setTimer] = useState<number>(30);
+  const [buttonDisabled, setButtonDisabled] = useState(false);
   const [isBtnDisabled, setIsBtnDisabled] = useState<boolean>(true);
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
   const dispatch = useDispatch();
@@ -94,8 +93,31 @@ const OtpScreen: React.FC = () => {
     setIsBtnDisabled(inputOtp.toString().length < 6);
   };
 
+  useEffect(() => {
+    let interval: any;
+
+    if (timer > 0) {
+      interval = setInterval(() => {
+        setTimer(prevTimer => prevTimer - 1);
+      }, 1000);
+    } else {
+      setButtonDisabled(true);
+      clearInterval(interval);
+    }
+
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, [timer]);
+
+  const onPressResend = () => {
+    setTimer(30);
+    setButtonDisabled(true);
+  };
+
   return (
     <Wrapper>
+      <Text style={{fontSize: 30, color: 'red', fontWeight: 'bold'}}>
+        {`00:${timer < 10 ? '0' : ''}${timer}`}
+      </Text>
       <ButtonWrapper>
         <BackButton onPress={goBack} src={backIcon} />
       </ButtonWrapper>
@@ -116,7 +138,13 @@ const OtpScreen: React.FC = () => {
         <SubHeadingText styles={resendStyle}>
           Did'nt recieved the code?
         </SubHeadingText>
-        <HeadingText styles={blueText}>Resend</HeadingText>
+        <Pressable onPress={buttonDisabled ? onPressResend : () => {}}>
+          <HeadingText
+            styles={resendStyle}
+            style={{color: buttonDisabled ? 'blue' : 'grey'}}>
+            Resend
+          </HeadingText>
+        </Pressable>
       </ResendTextWrapper>
     </Wrapper>
   );
