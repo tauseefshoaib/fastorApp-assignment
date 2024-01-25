@@ -65,8 +65,7 @@ const resendStyle = css`
 const OtpScreen: React.FC = () => {
   const [otp, setOtp] = useState<number>();
   const [timer, setTimer] = useState<number>(30);
-  const [buttonDisabled, setButtonDisabled] = useState(false);
-  const [isBtnDisabled, setIsBtnDisabled] = useState<boolean>(true);
+  const [buttonDisabled, setButtonDisabled] = useState<boolean>(false);
   const navigation = useNavigation<NativeStackNavigationProp<ParamListBase>>();
   const dispatch = useDispatch();
   const registerData: RegisterDetailsType = useSelector(
